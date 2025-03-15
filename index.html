@@ -3,11 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Level Lessons</title>
+    <title>EnglishView</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
     <script src="src/index.js" defer></script>
+
     <style>
-        /* Animation for Words */
+
         @keyframes fadeIn {
             0% { opacity: 0; transform: translateY(10px); }
             100% { opacity: 1; transform: translateY(0); }
@@ -16,8 +18,6 @@
         .animate-fadeIn {
             animation: fadeIn 0.5s ease-in-out;
         }
-
-        /* Text Shadow */
         .text-shadow {
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
@@ -27,7 +27,7 @@
 
     <!-- Heading -->
     <h1 class="text-4xl font-extrabold text-blue-700 text-shadow mb-6">
-        Programming Hero Levels 🚀
+        Vocabulary Levels 🚀
     </h1>
 
     <!-- Lessons Container -->
@@ -38,6 +38,21 @@
 
     <!-- Words Display Section -->
     <div id="wordsArea" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full max-w-5xl mt-6 p-6 bg-white/70 backdrop-blur-lg rounded-xl shadow-xl"></div>
+
+    <!-- Modal Structure -->
+<div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden">
+    <div class="bg-white p-6 rounded-lg shadow-xl w-96 text-center">
+        <h2 class="text-xl font-bold text-blue-600">Word Details</h2>
+        <p class="text-lg font-semibold mt-2" id="modal-word"></p>
+        <p class="text-gray-600 mt-1">Pronunciation: <span id="modal-pronunciation"></span></p>
+        <p class="text-gray-500 italic mt-1">Similar Words: <span id="modal-similar"></span></p>
+        
+        <button onclick="closeModal()" class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600 transition-all">
+            🗙
+        </button>
+    </div>
+</div>
+
 
 </body>
 </html>
