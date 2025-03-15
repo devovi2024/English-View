@@ -3,17 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>EnglishView</title>
 </head>
-<body>
+<body class="p-6">
 
-    <h1>English View</h1>
+    <h1 class="text-2xl font-bold text-center">English View</h1>
 
-    
-    <p>Total Lessons: <span id="totalData">0</span></p>
+    <p class="text-lg mt-4">Total Lessons: <span id="totalData" class="font-bold">0</span></p>
 
     <!-- Display area for lesson buttons -->
-    <div id="displayArea"></div>
+    <div id="displayArea" class="flex flex-wrap gap-2 mt-4"></div>
+    
+    <!-- Word List -->
+    <div id="word-container" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6"></div>
 
     <!-- Link to JavaScript file -->
     <script src="src/index.js"></script>
