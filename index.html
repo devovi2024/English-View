@@ -37,10 +37,10 @@
                 <span class="ml-2 text-green-500">জানালা</span>
             </div>
 
-            <!-- Menu -->
+ 
             <div id="menu" class=" flex space-x-6 items-center">
-                <button class="text-yellow-400 hover:text-green-500 transition">FAQ</button>
-                <button class="text-yellow-400 hover:text-green-500 transition">Learn</button>
+                <a class="text-yellow-400 hover:text-green-500 transition">FAQ</a>
+                <a class="text-yellow-400 hover:text-green-500 transition">Learn</a>
 
                 <!-- Profile -->
                 <div id="profileDropdown" class="relative hidden">
@@ -102,7 +102,7 @@
                 <img id="welcomeImg" src="./src/assets/profile.jpg" class="w-full h-full object-cover">
             </div>
     
-            <!-- Welcome Message -->
+
             <h3 class="text-xl font-bold text-[#3d2400] mt-4 md:mt-3">Welcome, <span id="welcomeUsername" class="text-yellow-700"></span>!</h3>
             
             <p class="text-gray-800 text-base md:text-sm text-center md:text-left leading-relaxed mt-2">
@@ -120,27 +120,24 @@
                 Vocabulary Levels 🚀
             </h1>
         
-            <!-- Lessons Container -->
+
             <div id="displayArea" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-full max-w-5xl"></div>
         
-            <!-- Total Data Count -->
+
             <p id="totalData" class="text-lg font-semibold text-gray-700 mt-4"></p>
         
             <div class="flex flex-col items-center justify-center w-full max-w-5xl mx-auto p-6">
-             <!-- Words Display Section -->
+
             <div id="wordsArea" 
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full p-6 backdrop-blur-lg  rounded-xl  transition-all duration-300 hidden">
             </div>
-               <!-- Message Box (Centered Inside the Grid) -->
+           
                <div id="selectContent" class="flex flex-col items-center justify-center col-span-full  p-6 text-center ">
                 <p class="text-lg text-gray-600">আপনি এখনো কোন Lesson Select করেন নি</p>
                 <h1 class="text-2xl font-bold text-gray-900 mt-2">একটি Lesson Select করুন।</h1>
             </div>  
             </div>
-            
-        
-            
-            <!-- Modal Structure -->
+
             <div id="modal" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden transition-opacity">
                 <div class="bg-white p-6 rounded-xl shadow-2xl w-96 text-center relative">
                     <h2 class="text-2xl font-bold text-blue-600">Word Details</h2>
@@ -162,148 +159,22 @@
                 <h1 class="text-3xl font-bold text-black-400 tracking-widest">Our Pricing Plans</h1>
                 <p class="mt-2 text-lg text-gray-600">Empower your journey with English Janala – Choose the best plan for you.</p>
             </div>
-        
-            <div class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
-                <!-- Basic Plan -->
-                <div class="bg-[#5A3E1B] text-white p-8 rounded-xl shadow-lg border-2 border-yellow-500">
-                    <h2 class="text-xl font-semibold">Starter Plan</h2>
-                    <p class="mt-2 text-gray-300">Perfect for beginners stepping into the world of English.</p>
-                    <p class="mt-6 text-3xl font-bold">€5 / month</p>
-                    <ul class="mt-4 space-y-3 text-sm">
-                        <li class="flex items-center">
-                            ✅ Access to beginner lessons
-                        </li>
-                        <li class="flex items-center">
-                            ✅ Weekly practice exercises
-                        </li>
-                        <li class="flex items-center">
-                            ✅ Audio pronunciation guides
-                        </li>
-                    </ul>
-                    <a href="#" class="mt-6 p-4 block  bg-yellow-500 text-white py-3 rounded-md hover:bg-yellow-600 transition">
-                        Get Started
-                    </a>
-                </div>
-        
-                <!-- Standard Plan -->
-                <div class="bg-[#7C4A1A] text-white p-8 rounded-xl shadow-lg border-2 border-green-500">
-                    <h2 class="text-xl font-semibold">Explorer Plan</h2>
-                    <p class="mt-2 text-gray-300">Advance your skills with interactive learning experiences.</p>
-                    <p class="mt-6 text-3xl font-bold">€10 / month</p>
-                    <ul class="mt-4 space-y-3 text-sm">
-                        <li class="flex items-center">
-                            ✅ Everything in Starter Plan
-                        </li>
-                        <li class="flex items-center">
-                            ✅ Interactive video lessons
-                        </li>
-                        <li class="flex items-center">
-                            ✅ Live Q&A sessions
-                        </li>
-                    </ul>
-                    <a href="#" class="mt-6 p-6 block w-full bg-green-500 text-white py-3 rounded-md hover:bg-green-600 transition">
-                        Upgrade Now
-                    </a>
-                </div>
-        
-                <!-- Premium Plan -->
-                <div class="bg-[#A66321] text-white p-8 rounded-xl shadow-lg border-2 border-red-500">
-                    <h2 class="text-xl font-semibold">Mastery Plan</h2>
-                    <p class="mt-2 text-gray-300">Achieve fluency with our expert coaching and personalized content.</p>
-                    <p class="mt-6 text-3xl font-bold">€20 / month</p>
-                    <ul class="mt-4 space-y-3 text-sm">
-                        <li class="flex items-center">
-                            ✅ Everything in Explorer Plan
-                        </li>
-                        <li class="flex items-center">
-                            ✅ 1-on-1 coaching sessions
-                        </li>
-                        <li class="flex items-center">
-                            ✅ Certification upon completion
-                        </li>
-                    </ul>
-                    <a href="#" class="mt-6 block w-full bg-red-500 text-white py-3 rounded-md hover:bg-red-600 transition p-6">
-                        Become a Pro
-                    </a>
-                </div>
+    
+            <div id="pricing-container" class="mt-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
+                <!-- Dynamic content will be inserted here -->
             </div>
         </section>
               
-        <!-- Discussion  -->
         <section>
             <div class="md:p-4 sm:p-4 px-8 py-20 max-w-6xl mx-auto gap-20">
-                <!-- Featured Discussion -->
-                <article class="mb-12">
-                    <div class="flex items-center justify-between mb-4">
-                        <h2 class="font-playfair font-black text-2xl sm:text-3xl text-neutral-900">English Learning Discussions</h2>
-                        <div class="text-xs text-neutral-600 italic">Page A1</div>
-                    </div>
-                    <div class="newspaper-border border-neutral-800 p-6 bg-white/50 ornate-corner">
-                        <div class="flex items-start gap-6">
-                            <div class="hidden sm:block">
-                                <div class="w-12 h-12 rounded-full bg-neutral-200 flex items-center justify-center border-2 border-neutral-300">
-                                    <span class="font-playfair font-bold text-neutral-600">JD</span>
-                                </div>
-                            </div>
-                            <div class="flex-1">
-                                <h3 class="font-playfair font-bold text-xl text-neutral-900 border-b border-neutral-200 pb-2">Mastering Daily Conversations</h3>
-                                <p class="mt-4 text-neutral-700 font-playfair leading-relaxed first-letter">Struggling with small talk or professional discussions? Learn how to express yourself confidently in different situations with practical tips.</p>
-                                <div class="mt-4 flex items-center gap-4 text-sm text-neutral-600 border-t border-neutral-200 pt-2">
-                                    <span class="italic">By John Doe</span>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-neutral-400"></div>
-                                    <span>II Hours Past</span>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-neutral-400"></div>
-                                    <span>XLII Replies</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </article>
-        
-                <!-- Discussion List -->
-                <div class="grid gap-6">
-                    <!-- Discussion Item -->
-                    <article class="newspaper-border border-neutral-800 p-6 bg-white/50 hover:bg-white/80 transition-colors ornate-corner">
-                        <div class="flex gap-6">
-                            <div class="flex-1">
-                                <h3 class="font-playfair font-bold text-lg text-neutral-900 border-b border-neutral-200 pb-2">How to Think in English</h3>
-                                <p class="mt-4 text-neutral-700 font-playfair first-letter">Want to speak fluently? Learn strategies to train your brain to think directly in English, reducing hesitation.</p>
-                                <div class="mt-4 flex items-center gap-4 text-sm text-neutral-600 border-t border-neutral-200 pt-2">
-                                    <span class="italic">By Sarah Smith</span>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-neutral-400"></div>
-                                    <span>IV Hours Past</span>
-                                </div>
-                            </div>
-                            <div class="hidden sm:flex flex-col items-end justify-between text-neutral-600">
-                                <span class="text-sm border-b border-neutral-200 pb-1">XXIII Replies</span>
-                                <span class="text-xs italic">Last: I Hour Past</span>
-                            </div>
-                        </div>
-                    </article>
-        
-                    <!-- Discussion Item -->
-                    <article class="newspaper-border border-neutral-800 p-6 bg-white/50 hover:bg-white/80 transition-colors ornate-corner">
-                        <div class="flex gap-6">
-                            <div class="flex-1">
-                                <h3 class="font-playfair font-bold text-lg text-neutral-900 border-b border-neutral-200 pb-2">Common Mistakes in English Grammar</h3>
-                                <p class="mt-4 text-neutral-700 font-playfair first-letter">Even advanced learners make these errors! Learn how to avoid common grammar mistakes to sound more natural.</p>
-                                <div class="mt-4 flex items-center gap-4 text-sm text-neutral-600 border-t border-neutral-200 pt-2">
-                                    <span class="italic">By Mark Johnson</span>
-                                    <div class="w-1.5 h-1.5 rounded-full bg-neutral-400"></div>
-                                    <span>VI Hours Past</span>
-                                </div>
-                            </div>
-                            <div class="hidden sm:flex flex-col items-end justify-between text-neutral-600">
-                                <span class="text-sm border-b border-neutral-200 pb-1">XV Replies</span>
-                                <span class="text-xs italic">Last: II Hours Past</span>
-                            </div>
-                        </div>
-                    </article>
-                </div>
+                <!-- Featured Discussion (Dynamic) -->
+                <article class="mb-12" id="featured-discussion"></article>
+    
+                <!-- Discussion List (Dynamic) -->
+                <div id="discussion-list" class="grid gap-6"></div>
             </div>
         </section>
 
-        <!-- FAQ  -->
         <section>
             <div class="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
                 <h1 class="text-center text-black-400 lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold"><span class="text-blue-800">Frequently</span> Asked Questions</h1>                             
@@ -380,7 +251,6 @@
            </div>
             </div>
         </section>
-
     </main>
 
 
@@ -416,6 +286,8 @@
 
 
     <script src="src/header.js"></script>
+    <script src="./src/pricing.js"></script>
+    <script src="./src/discussion.js"></script>
     <script src="./src/faq.js"></script>
 
 </body>
