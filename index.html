@@ -37,13 +37,8 @@
                 <span class="ml-2 text-green-500">জানালা</span>
             </div>
 
-            <!-- Mobile Menu Button -->
-            <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none">
-                ☰
-            </button>
-
             <!-- Menu -->
-            <div id="menu" class="hidden md:flex space-x-6 items-center">
+            <div id="menu" class=" flex space-x-6 items-center">
                 <button class="text-yellow-400 hover:text-green-500 transition">FAQ</button>
                 <button class="text-yellow-400 hover:text-green-500 transition">Learn</button>
 
@@ -84,12 +79,7 @@
                     class="w-full px-3 py-2 border border-gray-400 rounded-lg shadow-sm focus:ring-yellow-500 text-sm">
                 <input id="password" type="password" placeholder="********"
                     class="w-full px-3 py-2 border border-gray-400 rounded-lg shadow-sm focus:ring-yellow-500 text-sm mt-2">
-    
-                <!-- Image Upload -->
-                <label class="block text-gray-800 text-sm mt-3">Upload Profile:</label>
-                <input id="imageUpload" type="file" accept="image/*"
-                    class="w-full px-2 py-1 border border-gray-400 rounded-lg shadow-sm cursor-pointer text-xs bg-white">
-    
+
                 <!-- Display Uploaded Image -->
                 <div id="imagePreviewContainer" class="hidden mt-2">
                     <p class="text-gray-700 text-xs">Profile Preview:</p>
@@ -167,7 +157,7 @@
             </div>
         </section>
 
-        <section class="bg-orange-50 py-16" id="pricing">
+        <section class="bg-orange-50 py-16 p-4" id="pricing">
             <div class="max-w-7xl mx-auto px-6 lg:px-8 text-center">
                 <h1 class="text-3xl font-bold text-black-400 tracking-widest">Our Pricing Plans</h1>
                 <p class="mt-2 text-lg text-gray-600">Empower your journey with English Janala – Choose the best plan for you.</p>
@@ -239,6 +229,7 @@
             </div>
         </section>
               
+        <!-- Discussion  -->
         <section>
             <div class="md:p-4 sm:p-4 px-8 py-20 max-w-6xl mx-auto gap-20">
                 <!-- Featured Discussion -->
@@ -312,103 +303,84 @@
             </div>
         </section>
 
+        <!-- FAQ  -->
         <section>
             <div class="lg:container lg:mx-auto lg:py-16 md:py-12 md:px-6 py-12 px-4">
-                <h1 class="text-center dark:text-white lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold"><span class="text-blue-800">Frequently</span> Asked Questions</h1>
-        
-                <div class="lg:w-8/12 w-full mx-auto">
-                    <hr class="w-full lg:mt-10 my-8" />
-        
-                    <!-- FAQ Items -->
-                    <div class="w-full md:px-6">
-                        <!-- Questions -->
-                        <div class="faq-item" id="faq-1">
-                            <div class="flex justify-between items-center w-full">
-                                <p class="flex items-center dark:text-white font-medium text-lg text-gray-800">
-                                    <span class="lg:mr-6 mr-4 font-semibold">Q1.</span> What is the English Janala course?
-                                </p>
-                                <button class="faq-toggle" data-id="1">+</button>
-                            </div>
-                            <div class="faq-answer hidden" id="answer-1">
-                                <p class="text-gray-600 dark:text-gray-300">The English Janala course is a structured program designed to improve English skills through interactive lessons, videos, and practice exercises.</p>
-                            </div>
-                        </div>
-                        <hr class="w-full lg:mt-10 my-8" />
-        
-                        <div class="faq-item" id="faq-2">
-                            <div class="flex justify-between items-center w-full">
-                                <p class="flex items-center dark:text-white font-medium text-lg text-gray-800">
-                                    <span class="lg:mr-6 mr-4 font-semibold">Q2.</span> How can I enroll in the course?
-                                </p>
-                                <button class="faq-toggle" data-id="2">+</button>
-                            </div>
-                            <div class="faq-answer hidden" id="answer-2">
-                                <p class="text-gray-600 dark:text-gray-300">You can enroll in the English Janala course through our official website or mobile app by signing up and selecting your preferred learning plan.</p>
-                            </div>
-                        </div>
-                        <hr class="w-full lg:mt-10 my-8" />
-        
-                        <div class="faq-item" id="faq-3">
-                            <div class="flex justify-between items-center w-full">
-                                <p class="flex items-center dark:text-white font-medium text-lg text-gray-800">
-                                    <span class="lg:mr-6 mr-4 font-semibold">Q3.</span> Is there a free version of the course?
-                                </p>
-                                <button class="faq-toggle" data-id="3">+</button>
-                            </div>
-                            <div class="faq-answer hidden" id="answer-3">
-                                <p class="text-gray-600 dark:text-gray-300">Yes, we offer a free version with access to limited lessons. A premium plan provides full access to all features.</p>
-                            </div>
-                        </div>
-                        <hr class="w-full lg:mt-10 my-8" />
-        
-                        <div class="faq-item" id="faq-4">
-                            <div class="flex justify-between items-center w-full">
-                                <p class="flex items-center dark:text-white font-medium text-lg text-gray-800">
-                                    <span class="lg:mr-6 mr-4 font-semibold">Q4.</span> What levels does the course cover?
-                                </p>
-                                <button class="faq-toggle" data-id="4">+</button>
-                            </div>
-                            <div class="faq-answer hidden" id="answer-4">
-                                <p class="text-gray-600 dark:text-gray-300">The course covers beginner to advanced levels, allowing learners to progress at their own pace.</p>
-                            </div>
-                        </div>
-                        <hr class="w-full lg:mt-10 my-8" />
-        
-                        <div class="faq-item" id="faq-5">
-                            <div class="flex justify-between items-center w-full">
-                                <p class="flex items-center dark:text-white font-medium text-lg text-gray-800">
-                                    <span class="lg:mr-6 mr-4 font-semibold">Q5.</span> Can I get a certificate after completion?
-                                </p>
-                                <button class="faq-toggle" data-id="5">+</button>
-                            </div>
-                            <div class="faq-answer hidden" id="answer-5">
-                                <p class="text-gray-600 dark:text-gray-300">Yes, after successfully completing the course, you will receive a certificate of completion.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="text-center text-black-400 lg:text-4xl text-3xl lg:leading-9 leading-7 text-gray-800 font-semibold"><span class="text-blue-800">Frequently</span> Asked Questions</h1>                             
+            <div class="lg:w-8/12 w-full mt-10 p-6 mx-auto">
+                <!-- FAQ Items -->
+                <div class="w-full md:px-6">
+                   <!-- Questions -->
+                   <div class="faq-item" id="faq-1">
+                       <div class="flex justify-between items-center w-full">
+                           <p class="flex items-center text-black-400 font-medium text-lg ">
+                               <span class="lg:mr-6 mr-4 font-semibold">Q1.</span> What is the English Janala course?
+                           </p>
+                           <button class="faq-toggle" data-id="1">+</button>
+                       </div>
+                       <div class="faq-answer mt-4 hidden" id="answer-1">
+                           <p class="text-black-400 ">The English Janala course is a structured program designed to improve English skills through interactive lessons, videos, and practice exercises.</p>
+                       </div>
+                   </div>
+                   <hr class="w-full lg:mt-10 my-8" />
+   
+                   <div class="faq-item" id="faq-2">
+                       <div class="flex justify-between items-center w-full">
+                           <p class="flex items-center text-black-400 font-medium text-lg ">
+                               <span class="lg:mr-6 mr-4 font-semibold">Q2.</span> How can I enroll in the course?
+                           </p>
+                           <button class="faq-toggle" data-id="2">+</button>
+                       </div>
+                       <div class="faq-answer mt-4 hidden" id="answer-2">
+                           <p class="text-black-400">You can enroll in the English Janala course through our official website or mobile app by signing up and selecting your preferred learning plan.</p>
+                       </div>
+                   </div>
+                   <hr class="w-full lg:mt-10 my-8" />
+   
+                   <div class="faq-item" id="faq-3">
+                       <div class="flex justify-between items-center w-full">
+                           <p class="flex items-center text-black-400 font-medium text-lg ">
+                               <span class="lg:mr-6 mr-4 font-semibold">Q3.</span> Is there a free version of the course?
+                           </p>
+                           <button class="faq-toggle" data-id="3">+</button>
+                       </div>
+                       <div class="faq-answer mt-4 hidden" id="answer-3">
+                           <p class="text-black-400">Yes, we offer a free version with access to limited lessons. A premium plan provides full access to all features.</p>
+                       </div>
+                   </div>
+                   <hr class="w-full lg:mt-10 my-8" />
+   
+                   <div class="faq-item" id="faq-4">
+                       <div class="flex justify-between items-center w-full">
+                           <p class="flex items-center text-black-400 font-medium text-lg ">
+                               <span class="lg:mr-6 mr-4 font-semibold">Q4.</span> What levels does the course cover?
+                           </p>
+                           <button class="faq-toggle" data-id="4">+</button>
+                       </div>
+                       <div class="faq-answer mt-4 hidden" id="answer-4">
+                           <p class="text-black-400>The course covers beginner to advanced levels, allowing learners to progress at their own pace.</p>
+                       </div>
+                   </div>
+                   <hr class="w-full lg:mt-10 my-8" />
+   
+                   <div class="faq-item" id="faq-5">
+                       <div class="flex justify-between items-center w-full">
+                           <p class="flex items-center text-black-400 font-medium text-lg ">
+                               <span class="lg:mr-6 mr-4 font-semibold">Q5.</span> Can I get a certificate after completion?
+                           </p>
+                           <button class="faq-toggle" data-id="5">+</button>
+                       </div>
+                       <div class="faq-answer mt-4 hidden" id="answer-5">
+                           <p class="text-black-400">Yes, after successfully completing the course, you will receive a certificate of completion.</p>
+                       </div>
+                   </div>
+               </div>
+           </div>
+               </div>
+           </div>
             </div>
         </section>
-        
-        <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            document.querySelectorAll(".faq-toggle").forEach(button => {
-                button.addEventListener("click", function() {
-                    const id = this.getAttribute("data-id");
-                    const answer = document.getElementById(`answer-${id}`);
-                    
-                    if (answer.classList.contains("hidden")) {
-                        answer.classList.remove("hidden");
-                        this.textContent = "−";
-                    } else {
-                        answer.classList.add("hidden");
-                        this.textContent = "+";
-                    }
-                });
-            });
-        });
-        </script>
-         
+
     </main>
 
 
@@ -444,6 +416,7 @@
 
 
     <script src="src/header.js"></script>
+    <script src="./src/faq.js"></script>
 
 </body>
 </html>

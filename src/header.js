@@ -1,11 +1,5 @@
 
 
-
-document.getElementById("menuBtn").addEventListener("click", function () {
-    document.getElementById("menu").classList.toggle("hidden");
-});
-
-
 function loadUserData() {
     const savedUsername = localStorage.getItem("username");
     const savedImage = localStorage.getItem("profileImage");
@@ -27,18 +21,6 @@ function loadUserData() {
 }
 
 
-document.getElementById("imageUpload").addEventListener("change", function () {
-    const file = this.files[0];
-    if (file) {
-        const reader = new FileReader();
-        reader.onload = function (e) {
-            document.getElementById("previewImg").src = e.target.result;
-            document.getElementById("imagePreviewContainer").classList.remove("hidden");
-            localStorage.setItem("profileImage", e.target.result);
-        };
-        reader.readAsDataURL(file);
-    }
-});
 
 
 function handleSubmit() {
