@@ -23,7 +23,7 @@ function displayData(dataArray) {
     displayDiv.innerHTML = "";
 
     // Show total levels count
-    document.getElementById("totalData").textContent = `Total Levels: ${dataArray.length}`;
+    // document.getElementById("totalData").textContent = `Total Levels: ${dataArray.length}`;
 
     dataArray.forEach((item) => {
         let button = document.createElement("button");
